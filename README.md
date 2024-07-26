@@ -10,12 +10,6 @@ Este proyecto es una aplicación simple para gestionar pedidos de cervezas. Impl
 - Uvicorn para ejecutar el servidor ASGI
 - `pytest` para pruebas unitarias
 
-### Frontend
-
-- Node.js 18 o superior
-- NPM para las dependencias con Next.js
-- Tailwind CSS para estilos
-
 ## Instalación y Ejecución
 
 ### Backend
@@ -42,3 +36,8 @@ uvicorn app.main:app --reload
 
 PYTHONPATH=$(pwd) pytest
 
+### Frontend
+
+- Posicionarse en la carpeta de Frontend: cd frontend (o cd .. y luego cd frontend si estuviste en la carpeta "backend")
+- Node.js 18 o superior
+- Correr npm install y luego npm run dev para poner a funcionar el proyecto
