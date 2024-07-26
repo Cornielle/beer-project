@@ -32,7 +32,21 @@ pip install -r requirements.txt
 
 uvicorn app.main:app --reload
 
-### Pruebas unitarias
+### Endpoints
+
+"api/v1/order/status" Para visualizar el estatus de la orden
+"api/v1/order/add-round" Para agregar una "ronda" y pedir una o varias cervezas enviando desde el body lo siguiente:
+
+Ejemplo:
+
+[{
+	"name":"Quilmes",
+	"quantity":5
+}]
+
+NOTA: En caso de pedir cervezas que no estan dentro del stock, el backend deloverá un exception
+
+### Pruebas unitarias 
 
 PYTHONPATH=$(pwd) pytest
 
