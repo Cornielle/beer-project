@@ -1,0 +1,53 @@
+# Python Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environment Variables
+.env
+
+# Mypy
+.mypy_cache/
+
+# Pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# Local development configuration files
+*.local
+*.local.yml

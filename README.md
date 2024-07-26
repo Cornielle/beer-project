@@ -22,7 +22,7 @@ Este proyecto es una aplicación simple para gestionar pedidos de cervezas. Impl
 
 1. **Clonar el Repositorio**
 
-Repo: 
+Repo: https://github.com/Cornielle/beer-project.git
 
 ### Entorno virtual
 
