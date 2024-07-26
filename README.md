@@ -6,9 +6,9 @@ Este proyecto es una aplicación simple para gestionar pedidos de cervezas. Impl
 
 ### Backend
 
-- Python 3.12 o superior
-- Uvicorn para ejecutar el servidor ASGI
-- `pytest` para pruebas unitarias
+1- Python 3.12 o superior
+2- Uvicorn para ejecutar el servidor ASGI
+3- `pytest` para pruebas unitarias
 
 ## Instalación y Ejecución
 
@@ -51,7 +51,10 @@ NOTA: En caso de pedir cervezas que no estan dentro del stock, el backend delove
 PYTHONPATH=$(pwd) pytest
 
 ### Frontend
+    IMPORTANTE: renombrar el archivo .env.example por .env y quitar el signo "#" para habilitar el dominio:
+```NEXT_PUBLIC_BACKEND_BEER_STATUS_DOMAIN=http://localhost:8000/api/v1/order/status```
+    Permite conectar el backend con el frontend
 
-- Posicionarse en la carpeta de Frontend: cd frontend (o cd .. y luego cd frontend si estuviste en la carpeta "backend")
-- Node.js 18 o superior
-- Correr npm install y luego npm run dev para poner a funcionar el proyecto
+1 - Posicionarse en la carpeta de Frontend: cd frontend (o cd .. y luego cd frontend si estuviste en la carpeta "backend")
+2 - Node.js 18 o superior
+3 - Correr npm install y luego npm run dev para poner a funcionar el proyecto
