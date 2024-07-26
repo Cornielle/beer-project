@@ -42,10 +42,10 @@ const Page = (): ReactElement => {
           <p><strong>Taxes:</strong> ${orders.taxes.toFixed(2)}</p>
           <p><strong>Discounts:</strong> ${orders.discounts.toFixed(2)}</p>
         </div>
-        <h2 className="text-2xl font-bold mt-4">Rounds</h2>
+        <h2 className="text-2xl font-bold mt-4">Rondas</h2>
         {orders.rounds.map((round, index) => (
           <div key={index} className="mt-4">
-            <h3 className="font-bold">Round {index + 1}</h3>
+            <h3 className="font-bold">Ronda {index + 1}</h3>
             <p><strong>Created:</strong> {new Date(round.created).toLocaleString()}</p>
             <ul className="list-disc list-inside">
               {round.items.map((item, idx) => (
